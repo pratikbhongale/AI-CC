@@ -1,0 +1,97 @@
+public class percentage {
+    public static void calculatePercentage(Decimal num, Decimal total) {
+        // Check if the total is not zero to avoid division by zero error
+        if (total == 0) {
+            system.debug('error');
+        }
+        // Calculate the percentage
+        Decimal pp = (num / total) * 100;
+        system.debug(pp);
+    }
+}
+
+
+---------
+public class calci {
+    public static void simc(integer num1,integer num2,String operation)
+    {integer result;
+	
+if (operation == 'add') {
+    result = num1+num2;
+    System.debug('Result: ' + result);
+} else if (operation == 'subtract') {
+    result = num1-num2;
+    System.debug('Result: ' + result);
+} else if (operation == 'multiply') {
+    result = num1*num2;
+    System.debug('Result: ' + result);
+} else if (operation == 'divide') {
+    result = num1/num2;
+    System.debug('Result: ' + result);
+}
+    }
+}
+
+-----------
+public class deccon {
+    public static void convertToDecimal(String binaryNumber) {
+        Integer decimalNumber = 0;
+        Integer power = 0;
+        // Loop through each digit of the binary number from right to left
+        for (Integer i = binaryNumber.length() - 1; i >= 0; i--) {
+            // Convert the character to integer
+            Integer digit = Integer.valueOf(binaryNumber.substring(i, i + 1));
+            // Multiply the digit by 2 raised to the power of its position
+            decimalNumber += digit * (Integer)Math.pow(2, power);
+            // Increment the power for the next position
+            power++;
+        }   
+        System.debug('Decimal representation: ' + decimalNumber);
+    }
+}
+
+
+------------
+public class mcq {
+    public static void main()
+    {
+        System.debug('Who is creater of python');
+            System.debug('1.Guido van rossum');
+            System.debug('2.benrich');
+            System.debug('3.matusos');
+            System.debug('4.tim');
+    }
+    public static void checkInput(String userInput) {
+        // Define the correct input
+        String correctInput = '1';
+        // Check if the user input matches the correct input
+        if (userInput == correctInput) {
+            System.debug('true'); // Input is correct
+        } else {
+            System.debug('false'); // Input is incorrect
+        }
+    }
+}
+
+
+---------
+public class tempc {
+    public static void ctf(Decimal t) {
+        system.debug((t * 9 / 5) + 32);
+    }
+    public static void ftc(Decimal t) {
+        system.debug((t- 32) * 5 / 9);
+    }
+    public static void ctk(Decimal t) {
+        system.debug(t+ 273.15);
+    }
+    public static void ktc(Decimal t) {
+        system.debug(t - 273.15);
+    }
+    public static void ftk(Decimal t) {
+        system.debug((t +459.67) * 5 / 9);
+    }
+     public static void ktf(Decimal t) {
+        system.debug((t* 9 / 5) - 459.67);
+    }
+}
